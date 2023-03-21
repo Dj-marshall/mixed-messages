@@ -1,11 +1,9 @@
 // main function
 
-let t = 1; // to be removed when completed 
 
 const getMyQuotes = () => {
   console.log(`Today the weather will be ${weather}.`);
   console.log(quote());
-  console.log(`Your task for today is to ${t}`);
   console.log("Todays lucky number is " + luckyNumber());
 }
 
@@ -37,10 +35,10 @@ switch (weatherNum) {
     weather = "clear";
 }
 
-// quote (loop array)
+// quote (array)
 const quote = () => {
 
-const quotes = ["Believe you can and you're halfway there.",
+  const quotes = ["Believe you can and you're halfway there.",
 "Success is not final, failure is not fatal: it is the courage to continue that counts.",
 "Don't watch the clock; do what it does. Keep going.",
 "You are never too old to set another goal or to dream a new dream.",
@@ -51,9 +49,8 @@ const quotes = ["Believe you can and you're halfway there.",
 "Success is liking yourself, liking what you do, and liking how you do it.",
 "The best way to predict the future is to create it."]
 
-return (quotes[ranNum(quotes.length)]);
+  return (quotes[ranNum(quotes.length)]);
 }
-// task (loop object)
 
 // number (function)
 
