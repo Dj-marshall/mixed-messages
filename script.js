@@ -3,7 +3,7 @@
 let t = 1; // to be removed when completed 
 
 const getMyQuotes = () => {
-  console.log(`Today the weather will be ${t}.`);
+  console.log(`Today the weather will be ${weather}.`);
   console.log(quote());
   console.log(`Your task for today is to ${t}`);
   console.log("Todays lucky number is " + luckyNumber());
@@ -16,6 +16,26 @@ const ranNum = (length) => {
 }
 
 // weather (switch statement)
+
+let weatherNum = ranNum(4);
+let weather = "";
+
+switch (weatherNum) {
+  case 0 : 
+    weather = "raining";
+  break;
+  case 1 :
+    weather = "sunny";
+  break;
+  case 2 :
+    weather = "windy";
+  break;
+  case 4 :
+    weather = "snowing";
+  break;
+  default :
+    weather = "clear";
+}
 
 // quote (loop array)
 const quote = () => {
