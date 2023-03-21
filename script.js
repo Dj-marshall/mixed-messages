@@ -6,7 +6,7 @@ const getMyQuotes = () => {
   console.log(`Today the weather will be ${t}.`);
   console.log(`${t}`);
   console.log(`Your task for today is to ${t}`);
-  console.log("Todays lucky number is" + luckyNumber());
+  console.log("Todays lucky number is " + luckyNumber());
 }
 
 // random number (function)
@@ -19,3 +19,11 @@ const getMyQuotes = () => {
 
 // number (function)
 
+function luckyNumber () {
+  return Math.floor(Math.random() * 10);
+}
+
+
+
+
+getMyQuotes();
